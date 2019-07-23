@@ -2266,10 +2266,10 @@
 	transition: 0.5s;
 }
 
-.buttonpog div.fuck {
+.buttonpog div.frontpagebuttons {
 	overflow: hidden;
 }
-.buttonpog div.fuck img{
+.buttonpog div.frontpagebuttons img{
 	width: 100%;
 	max-width: 100%;
 	height: 100%;

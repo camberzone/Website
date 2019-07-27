@@ -1970,8 +1970,8 @@
     font-size: 2em;
     line-height: 1.5em;
     position: absolute;
-    left: 47px;
-    top: 15px;
+    left: 48px;
+    top: 9px;
 		}
 		
 	}
@@ -2369,4 +2369,206 @@ img.iconpic
 
 .gal img {
 
+}
+
+.innerinkycat
+{
+	width: 100%;
+}
+
+.inkycattop
+{
+	height: 40px;
+	display: block;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	background-color: #2B2B2B;
+}
+
+.inkycatarea
+{
+	height: 100%;
+	padding-top: 10px;
+	display: block;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	background-color: #2B2B2B;
+}
+
+.inkycatimage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border: solid;
+	border-width: 10px;
+	border-color: #2B2B2B;
+}
+
+.inkycatbuttonpanel{
+	padding-top: 20px;
+	padding-bottom: 14px;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+	border-left: solid;
+	border-right: solid;
+	border-width: 10px;
+	border-color: #2B2B2B;
+	background-color: #171717;
+}
+
+.inkycatbutton {
+	width: 7%;
+	height: auto;
+	min-width: 20px;
+	min-height: 20px;
+	margin-left: 3.125%;
+	margin-right: 3.125%;
+	max-height: 70px;
+	max-width: 70px;
+	background-color: transparent;
+}
+
+.inkycatbuttonimage{
+	width: 100%;
+	min-width: 20px;
+	max-height: 70px;
+	max-width: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.inkycattextbox
+{
+	border-left: solid;
+	border-right: solid;
+	border-width: 10px;
+	border-color: #2B2B2B;
+	width: 100%;
+	background-color: #2B2B2B;
+	min-height: 10px;
+	
+}
+
+.inkycattext
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.inkycatheader
+{
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+
+.inkycatheaderstrip
+{
+	height: 70px;
+	background-color: #171717;
+	clear:both;
+}
+
+h8
+{
+	font-family: "pt-sans-narrow";
+	line-height: 3;
+	font-size: 27px;
+}
+
+.inkycatdate{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    text-align: right;
+    margin-top: -47px;
+    margin-right: 10px;
+}
+
+h9
+{
+	line-height: 2;
+}
+
+@media screen and (max-width: 850px) {
+
+	.inkycatarea
+	{
+		width: 95%;
+	}
+	
+	.inkycatbuttonpanel
+	{
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media screen and (min-width: 1280px)
+{
+	.inkycatheaderstrip
+	{
+		padding-bottom: 65px;
+	}
+	
+}
+
+@media screen and (min-width: 1024px)
+{
+	
+	h9
+	{
+		line-height: 2;
+	}
+	
+}
+
+@media screen and (min-width: 1024px)
+{
+	
+	h9
+	{
+		line-height: 2;
+	}
+	
+}
+
+@media screen and (min-width: 1080px)
+{
+	
+	h9
+	{
+		line-height: 2;
+	}
+	
+}
+
+@media screen and (max-width: 620px)
+{
+	h8
+	{
+		font-size: 1.6em;
+		line-height: 3;
+	}
+	
+	h9
+	{
+		line-height: 2;
+		font-size: 1em;
+	}
+	
+	.inkycatdate{
+		margin-right: 10px;
+	}
+	
 }

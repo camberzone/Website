@@ -235,6 +235,7 @@
 	}
 
 	h5 {
+
 		font-size: 0.9em;
 	}
 
@@ -805,7 +806,7 @@
     padding-left: 3.5em;
     position: relative;
     overflow: hidden;
-    min-height: 37em;
+    min-height: 10em;
     padding-bottom: 20px;
 	}
 
@@ -813,6 +814,7 @@
 
 			.gallery {
 				padding: 2em;
+				padding-top: 0px;
 				min-height: 20em;
 			}
 
@@ -1472,13 +1474,13 @@
 /* Menu */
 
 		#header nav {
-			height: inherit;
-			line-height: inherit;
-			position: absolute;
-			right: 2.75em;
-			top: 0;
-			padding-top: 33px;
-			vertical-align: middle;
+    height: inherit;
+    line-height: inherit;
+    position: absolute;
+    right: 2.75em;
+    top: 0;
+    padding-top: 48px;
+    vertical-align: middle;
 		}
 
 			#header nav > ul {
@@ -1685,7 +1687,10 @@
 
 		#main #header {
     background: #0F0F0F;
-    padding: 0.8em 3.5em;
+    padding-top: 0.8em;
+    padding-right: 3.5em;
+    padding-left: 3.5em;
+    padding-bottom: 5.8em;
     text-align: left;
 		}
 
@@ -1706,6 +1711,15 @@
 				}
 
 			}
+
+			@media screen and (max-width: 980px) {
+				
+				#header #nav {
+					padding-top: 30px;
+				}
+			}
+
+
 
 			@media screen and (max-width: 850px) {
 
@@ -1845,7 +1859,6 @@
 				color: rgba(255, 255, 255, 0.65);
 			}
 */
-
 		/*LOOK HERE!!!!!!!!!!*/
 		#header > a {
 			-moz-transition: color 0.2s ease-in-out;
@@ -1967,11 +1980,11 @@
 	@media screen and (min-width: 981px)
 	{
 		#header > h7 a {
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 1.5em;
     position: absolute;
     left: 48px;
-    top: 9px;
+    top: 23px;
 		}
 		
 	}
@@ -2284,7 +2297,7 @@ thing {
     height: 0px;
     border: 0;
     border-top: 3px solid #2B2B2B;
-    margin: 2em 0;
+    margin: 3em 0;
     padding: 0;
 }
 	@media screen and (max-width: 980px) {
@@ -2304,8 +2317,8 @@ thing {
 	}
 
 div.headermarginmain {
-	width:100%;
-	height:40px;
+    width: 100%;
+    height: 53px;
 }
 
 @media screen and (max-width: 980px) {
@@ -2344,6 +2357,15 @@ img.iconpic
 	padding-top: 30px;
 }
 
+img.inkycataboutimg
+{
+	width:90%;
+	display: block;
+	margin-left: 0px;
+  	margin-right: auto;
+	padding-top: 30px;
+}
+
 @media screen and (max-width: 736px) {
 
 	.right {
@@ -2356,6 +2378,11 @@ img.iconpic
 	}
 	img.iconpic{
 		margin-left: auto;
+		width: 100%;
+	}
+	img.inkycataboutimg{
+		margin-left: auto;
+		margin-bottom: -0px;
 		width: 100%;
 	}
 }
@@ -2371,20 +2398,42 @@ img.iconpic
 
 }
 
+.gal img {
+
+}
+
 .innerinkycat
 {
 	width: 100%;
+	background-image: url("http://www.camberzone.com/images/background_tile.jpg")
+
 }
 
 .inkycattop
 {
-	height: 40px;
+	height: 58px;
 	display: block;
-	width: 60%;
+	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1000px;
 	background-color: #2B2B2B;
+}
+
+@media screen and (max-width: 980px) {
+
+	.inkycattop{
+		height: 35px;
+	}
+	
+}
+
+@media screen and (min-width: 1680px) {
+
+	.inkycattop{
+		height: 73px;
+	}
+	
 }
 
 .inkycatarea
@@ -2392,10 +2441,10 @@ img.iconpic
 	height: 100%;
 	padding-top: 10px;
 	display: block;
-	width: 60%;
+	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1000px;
+	max-width: 800px;
 	background-color: #2B2B2B;
 }
 
@@ -2407,6 +2456,7 @@ img.iconpic
 	border: solid;
 	border-width: 10px;
 	border-color: #2B2B2B;
+	cursor: pointer;
 }
 
 .inkycatbuttonpanel{
@@ -2420,23 +2470,32 @@ img.iconpic
 	border-width: 10px;
 	border-color: #2B2B2B;
 	background-color: #171717;
+	background-image: url("../../images/buttonpanel.jpg");
+	background-size: cover;
+
 }
 
 .inkycatbutton {
-	width: 7%;
+	width: 15%;
 	height: auto;
 	min-width: 20px;
 	min-height: 20px;
 	margin-left: 3.125%;
 	margin-right: 3.125%;
-	max-height: 70px;
-	max-width: 70px;
+	max-height: 40px;
+	max-width: 40px;
 	background-color: transparent;
+	padding: 0;
+}
+
+.inkycatbutton:hover{
+	opacity: 0.3;
 }
 
 .inkycatbuttonimage{
 	width: 100%;
 	min-width: 20px;
+	min-height: 20px;
 	max-height: 70px;
 	max-width: 70px;
 	display: block;
@@ -2474,6 +2533,8 @@ img.iconpic
 
 .inkycatheaderstrip
 {
+	background-image: url("../../images/infopanel.jpg");
+	background-size: cover;
 	height: 70px;
 	background-color: #171717;
 	clear:both;
@@ -2481,9 +2542,9 @@ img.iconpic
 
 h8
 {
-	font-family: "pt-sans-narrow";
-	line-height: 3;
-	font-size: 27px;
+    font-family: "pt-sans-narrow";
+    line-height: 3.5;
+    font-size: 27px;
 }
 
 .inkycatdate{
@@ -2491,7 +2552,7 @@ h8
     width: 50%;
     margin-left: auto;
     text-align: right;
-    margin-top: -47px;
+    margin-top: -57px;
     margin-right: 10px;
 }
 
@@ -2512,6 +2573,14 @@ h9
 		margin-bottom: 10px;
 	}
 	
+}
+
+@media screen and (max-width: 480px)
+{
+	.inkycatbutton
+	{
+		width: 7%;
+	}
 }
 
 @media screen and (min-width: 1280px)
@@ -2538,7 +2607,7 @@ h9
 	
 	h9
 	{
-		line-height: 2;
+    line-height: 2;
 	}
 	
 }
@@ -2553,22 +2622,299 @@ h9
 	
 }
 
+@media screen and (max-width: 1680px)
+{
+	.inkycatdate{
+		margin-top: -53px;
+	}
+}
+
 @media screen and (max-width: 620px)
 {
 	h8
 	{
 		font-size: 1.6em;
-		line-height: 3;
+		line-height: 3.5;
 	}
 	
 	h9
 	{
-		line-height: 2;
+		line-height: 1.6;
 		font-size: 1em;
 	}
 	
 	.inkycatdate{
 		margin-right: 10px;
 	}
+}
+
+.inkycatlogo
+{
+    margin-top: 14px;
+    float: left;
+    height: 65px;
+    margin-left: -11px;
+}
+
+@media screen and (max-width: 980px) {
+
+	.inkycatlogo
+	{
+		height: 50px;
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+
+	.inkycatlogo{
+		margin-left: -20px;
+	}
 	
+}
+
+@media screen and (max-width: 290px) {
+
+	.inkycatlogo{
+		margin-top: 10px;
+		height: 40px;
+	}
+	
+}
+
+@media screen and (max-width: 250px) {
+
+	.inkycatlogo{
+		margin-top: 20px;
+		height: 30px;
+	}
+	
+}
+
+@media screen and (min-width: 1680px) {
+
+	.inkycatlogo{
+		margin-top: 7px;
+		height: 80px;
+	}
+	
+}
+
+.inkycatcommentboxtop
+{
+	width: 96%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 3px solid #191919;
+}
+
+.inkycatcommentbox
+{
+    border-left: solid;
+    border-right: solid;
+    border-width: 10px;
+    border-color: #2B2B2B;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.inkycatchapterarea
+{
+}
+
+h10
+{
+	font-size: 30px;
+	padding-left: 15px;
+}
+
+.inkycatchapterheader
+{
+	margin-top: 30px;
+	padding-top: 5px;
+	height: 55px;
+	background-color:#0F0F0F;
+	margin-bottom: 10px;
+	border-left: solid 10px #1A1A1A;
+	border-right: solid 10px #1A1A1A;
+}
+
+.inkycatlogolink
+{
+	cursor: pointer;
+	
+}
+
+.inkycatlogolink:hover
+{
+	opacity: 0.3;
+}
+
+.inkycatbuttontext
+{
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.inkycatupdatetext
+{
+    width: 170px;
+    display: block;
+    margin-top: 41px;
+    margin-left: 241px;
+}
+
+.inkycatheaderswirls
+{
+    position: absolute;
+    left: 0;
+    margin-top: -2px;
+    width: 530px;
+	pointer-events: none;
+}
+
+@media screen and (min-width: 1690px) {
+
+	.inkycatheaderswirls{
+		width: 650px;
+		margin-top: -8px;
+	}
+	.inkycatupdatetext
+	{
+		width: 204px;
+		margin-top: 40px;
+		margin-left: 302px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+
+	.inkycatheaderswirls{
+		width: 425px;
+		margin-top: -12px;
+	}
+	.inkycatupdatetext
+	{
+    width: 140px;
+    margin-top: 22px;
+    margin-left: 299px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+
+	.inkycatheaderswirls{
+		width: 425px;
+		margin-top: -12px;
+		margin-left: -30px;
+	}
+	.inkycatupdatetext
+	{
+    width: 130px;
+    margin-top: 22px;
+    margin-left: 178px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+
+	.inkycatupdatetext
+	{
+    	margin-left: 176px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	
+	.inkycatlogo{
+		height: 43px;
+		margin-top: 5px;
+		margin-left: -25px;
+	}
+	
+	.inkycatheaderswirls{
+		width: 370px;
+		margin-left: -25px;
+	}
+	
+	.inkycatupdatetext
+	{
+		width: 110px;
+		margin-left:150px;
+	}
+	
+}
+
+@media screen and (max-width: 460px) {
+	
+	.inkycatheaderswirls
+	{
+		margin-top: -18px;
+		margin-left: -3px;
+		width: 250px;
+		content: url( "../../images/inky cat header swirls 2.png")
+	}
+	
+	.inkycatupdatetext
+	{
+		margin-left: 110px;
+	}
+	
+}
+
+@media screen and (max-width: 375px) {
+	
+	.inkycatlogo
+	{
+		margin-top: 10px;
+		margin-left: -22px;
+		height: 35px;
+	}
+	
+	.inkycatupdatetext
+	{
+		width: 100px;
+		margin-left: 85px;
+	}
+	
+}
+
+@media screen and (max-width: 335px) {
+	
+	.inkycatlogo
+	{
+		height: 44px;
+		margin-top: 5px;
+	}
+	
+	.inkycatupdatetext
+	{
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 270px) {
+	
+	.inkycatlogo
+	{
+		height: 35px;
+		margin-top: 10px;
+	}
+	
+}
+
+
+h20
+{
+    font-size: 12px;
+	font-family: "ropa-sans";
 }

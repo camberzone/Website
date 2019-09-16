@@ -726,7 +726,7 @@ var PhotoSwipeUI_Default =
 		}
 
 		if(e.detail && e.detail.pointerType === 'mouse') {
-
+			
 			// close gallery if clicked outside of the image
 			if(_hasCloseClass(target)) {
 				pswp.close();
@@ -736,7 +736,7 @@ var PhotoSwipeUI_Default =
 			if(framework.hasClass(target, 'pswp__img')) {
 				if(pswp.getZoomLevel() === 1 && pswp.getZoomLevel() <= pswp.currItem.fitRatio) {
 					if(_options.clickToCloseNonZoomable) {
-						pswp.close();
+						//pswp.close();
 					}
 				} else {
 					pswp.toggleDesktopZoom(e.detail.releasePoint);

@@ -1500,14 +1500,14 @@
 				}
 
 					#header nav > ul > li a {
-						-moz-transition: color 0.2s ease-in-out;
-						-webkit-transition: color 0.2s ease-in-out;
-						-o-transition: color 0.2s ease-in-out;
-						-ms-transition: color 0.2s ease-in-out;
-						transition: color 0.2s ease-in-out;
-						color: #ECECEC;
-						display: inline-block;
-						text-decoration: none;
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    color: #ECECEC;
+    display: inline-block;
+    text-decoration: none;
 					}
 
 						#header nav > ul > li a:hover {
